@@ -11,11 +11,12 @@ server.use(bp.json())
 
 
 //Register routes
-import UserController from './controllers/UserController'
-import PhotoController from './controllers/PhotoController'
+import GalaxyController from './controllers/GalaxyController'
 
-server.use('/api/users', new UserController().router)
-server.use('/api/photos', new PhotoController().router)
+
+
+server.use('/api/users', new GalaxyController().router)
+
 
 
 

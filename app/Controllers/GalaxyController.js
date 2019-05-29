@@ -1,14 +1,14 @@
 
 import express from 'express'
 import GalaxyService from '../Services/GalaxyService';
-import PlannetService from '../Services/PlannetService';
+
 
 
 let _service = new GalaxyService()
 
 let _repo = _service.repository
 
-let _plannetRepo = new PlannetService().repository
+
 
 export default class GalaxyController {
     constructor() {
