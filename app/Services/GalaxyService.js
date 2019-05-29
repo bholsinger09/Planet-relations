@@ -8,7 +8,7 @@ let _schema = new mongoose.Schema({
 
 }, { timestamps: true })
 
-export default class ParentService {
+export default class GalaxyService {
     get repository() {
         return mongoose.model('Galaxy', _schema)
     }
