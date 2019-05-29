@@ -7,7 +7,7 @@ let _schema = new mongoose.Schema({
     description: { type: String }
 }, { timestamps: true })
 
-export default class ChildService {
+export default class PlannetService {
     get repository() {
         return mongoose.model('child', _schema)
     }

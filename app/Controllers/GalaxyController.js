@@ -1,14 +1,16 @@
-import ParentService from '../Services/GalaxyService';
+
 import express from 'express'
-import ChildService from '/services/childService';
+import GalaxyService from '../Services/GalaxyService';
+import PlannetService from '../Services/PlannetService';
 
 
-let _service = new
-    let _repo = _service.repository
+let _service = new GalaxyService()
 
-let _photoRepo = new PhotoService().repository
+let _repo = _service.repository
 
-export default class UserController {
+let _plannetRepo = new PlannetService().repository
+
+export default class GalaxyController {
     constructor() {
         this.router = express.Router()
             .get('', this.getAll)
